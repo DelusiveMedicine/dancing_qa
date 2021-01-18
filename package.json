@@ -1,0 +1,29 @@
+{
+  "name": "dancing_qa",
+  "version": "1.0.0",
+  "description": "Portfolio. Landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashaant/dancing_qa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sashaant/dancing_qa/issues"
+  },
+  "homepage": "https://github.com/sashaant/dancing_qa#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "resolve-url": "^0.2.1"
+  }
+}

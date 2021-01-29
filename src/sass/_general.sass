@@ -1,12 +1,11 @@
 
 header
 	position: relative
-	height: 50px
+	min-height: 50px
 
 nav
 	position: fixed
 	width: 100%
-	height: 50px
 	background-color: #212121
 	z-index: 5
 
@@ -17,7 +16,7 @@ nav
 	display: flex
 	justify-content: space-between
 	padding: 13px 70px
-	margin: 0
+	margin: 0 auto
 	list-style-type: none
 	&_link
 		color: #ffffff
@@ -28,43 +27,38 @@ nav
 			color: $main-color
 
 .subheader
+	padding: 16px 0
 	position: absolute
-	top: 50px
+	top: 100%
 	width: 100%
-	height: 84px
 	background-color: rgba(0, 0, 0, 0.6)
 	&_logo
 		display: block
 		max-width: 100%
-		margin-top: 16px
 	&_official
 		margin-top: 6px
 		opacity: 0.5
 		color: #ffffff
 		font-size: 13px
 		font-weight: 400
+	&_contact
+		margin-right: 30px
+		text-align: right
 	&_call
 		color: #ffffff
 		font-size: 12px
 		font-weight: 300
-		margin-top: 19px
-		text-align: right
 	&_phone
 		display: block
-		margin-top: 8px
 		color: #ffffff
 		font-size: 22px
 		font-weight: 400
 		text-transform: uppercase
-		text-align: right
-		line-height: 12px
 		&:hover
 			text-decoration: none
 			color: #fff
 	&_btn
-		margin-top: 19px
-		width: 172px
-		height: 46px
+		padding: 13px 71px
 		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 4px
@@ -80,7 +74,7 @@ nav
 .promo
 	min-height: 800px
 	background: url('../img/bg/main_bg.jpg') center (center / cover) no-repeat
-	padding: 150px 0 135px 0
+	padding: 150px 0 135px
 	&_header
 		color: #ffffff
 		font-weight: 700
@@ -88,6 +82,7 @@ nav
 		font-size: 60px
 		line-height: 60px
 		margin: 0
+		margin-bottom: 22px
 		text-align: center
 	&_subheader
 		color: #ffffff
@@ -99,17 +94,17 @@ nav
 		margin-top: 22px
 		text-align: center
 	&_descr
+		margin: 0
+		margin-bottom: 118px
 		color: #ffffff
 		font-size: 18px
 		font-weight: 400
 		line-height: 24px
 		text-align: center
-		margin-top: 23px
 	&_btn
+		padding: 18px 90px
 		display: block
-		margin: 118px auto 0 auto
-		width: 259px
-		height: 63px
+		margin: 0 auto
 		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
 		border: none
 		border-radius: 4px
@@ -122,12 +117,11 @@ nav
 		+btn_hover
 
 .reasons
-	padding: 71px 0 65px 0
+	padding: 108px 0 65px
 	&_block
 		display: flex
 		justify-content: center
 		align-items: center
-		margin-top: 35px
 	&_round
 		display: flex
 		justify-content: center
@@ -170,16 +164,14 @@ nav
 		width: 76px
 
 .title
-	position: relative
-	margin-bottom: 0
-	margin-top: 38px
+	margin: 0
+	margin-bottom: 36px
 	color: #222222
 	font-size: 38px
 	line-height: 38px
 	font-weight: 700
 	text-transform: uppercase
 	text-align: center
-	z-index: 2
 	&_white 
 		color: #fff
 
@@ -350,7 +342,7 @@ nav
 			text-decoration: none
 			color: #fff
 footer 
-	padding: 14px 23px 39px 23px
+	padding: 14px 23px 39px
 	a 
 		&:hover 
 			text-decoration: none
@@ -363,28 +355,28 @@ footer
 	&_wrapper
 		display: flex 
 		justify-content: space-between
-		align-items: flex-start
+		align-items: flex-end
 		padding-top: 32px
 	&_wrapper > div 
-		width: 33%
 		&:nth-child(3)
 			display: flex 
 			justify-content: flex-end
 	&_social
-		width: 160px
+		padding: 0 4px
 		display: flex
-		justify-content: space-between
 		&_item 
+			margin: 0
 			display: flex 
 			justify-content: center
 			align-items: center
-			margin: 0 4px 
 			width: 32px
 			height: 32px
 			background-color: #070716
 			border-radius: 100%
 			i 
 				color: #fff
+		&_item:not(:last-child)
+			margin-right: 8px
 	&_links
 		width: 390px
 		margin: 0 auto
@@ -408,11 +400,10 @@ footer
 				text-transform: uppercase
 		&_lang 
 			display: block 
-			margin: 0 auto
+			margin: 0
 			color: #1fbad6
 			font-size: 11px
 			font-weight: 400
-			margin-top: 19px
 			text-transform: uppercase
 			text-align: center
 .xs-visible 
